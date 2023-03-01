@@ -8,7 +8,7 @@ function galleryItemsGeneration(galleryItems) {
 	return galleryItems
 		.map(
 			({ preview, description, original }) => `
-            <div class="gallery__item">
+            <li class="gallery__item">
 				<a class="gallery__link" href="${original}">
 					<img
 					class="gallery__image"
@@ -16,7 +16,7 @@ function galleryItemsGeneration(galleryItems) {
 					alt="${description}"
 					/>
 				</a>
-			</div>`,
+			</li>`,
 		)
 		.join("");
 }
